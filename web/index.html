@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Habibur Rahaman - Professional Web Developer Portfolio showcasing skills, projects, and contact information.">
+    <title>Habibur Rahaman | Web Developer Portfolio</title>
+    <link rel="icon" href="images/mo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif;}
+        body {line-height:1.6; color:#333; background:#f4f4f4;}
+        a {text-decoration:none; color:inherit;}
+        img {max-width:100%; height:auto;}
+
+        header {background:#1a1a1a; color:#fff; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:100;}
+        header .logo {font-size:1.8rem; font-weight:600; color:#e67e22;}
+        nav ul {display:flex; list-style:none;}
+        nav ul li {margin-left:25px;}
+        nav ul li a {color:#fff; padding:6px 12px; border-radius:5px; transition:0.3s;}
+        nav ul li a:hover, nav ul li a.active {background:#e67e22; color:#fff;}
+
+        .hero {display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; padding:80px 40px; background:linear-gradient(to right, #1a1a1a, #2c3e50); color:#fff;}
+        .hero .text {flex:1 1 400px; padding-right:30px;}
+        .hero .text h1 {font-size:3rem; margin-bottom:20px;}
+        .hero .text p {font-size:1.2rem; margin-bottom:25px;}
+        .hero .text .btn {background:#e67e22; color:#fff; padding:12px 25px; border-radius:5px; font-weight:600; display:inline-block; transition:0.3s;}
+        .hero .text .btn:hover {background:#ff9933;}
+        .hero .image {flex:1 1 300px; text-align:center;}
+        .hero .image img {border-radius:15px; max-width:350px; border:4px solid #e67e22;}
+
+        .services {padding:70px 40px; text-align:center; background:#fff;}
+        .services h2 {font-size:2.5rem; margin-bottom:50px; color:#1a1a1a;}
+        .service-cards {display:flex; flex-wrap:wrap; justify-content:center; gap:25px;}
+        .card {background:#f9f9f9; padding:30px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); flex:1 1 250px; transition:0.3s;}
+        .card:hover {transform:translateY(-8px);}
+        .card i {font-size:2.5rem; color:#e67e22; margin-bottom:20px;}
+        .card h3 {margin-bottom:15px; font-size:1.3rem; color:#1a1a1a;}
+        .card p {font-size:1rem; color:#555;}
+
+        .projects {padding:70px 40px; text-align:center; background:#f4f4f4;}
+        .projects h2 {font-size:2.5rem; margin-bottom:50px; color:#1a1a1a;}
+        .project-cards {display:flex; flex-wrap:wrap; justify-content:center; gap:25px;}
+        .project-card {background:#fff; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); overflow:hidden; flex:1 1 300px; transition:0.3s;}
+        .project-card img {width:100%; height:200px; object-fit:cover;}
+        .project-card .info {padding:20px; text-align:left;}
+        .project-card .info h3 {margin-bottom:10px;}
+        .project-card .info p {font-size:0.95rem; color:#555;}
+
+        .contact {padding:70px 40px; text-align:center; background:#1a1a1a; color:#fff;}
+        .contact h2 {font-size:2.5rem; margin-bottom:30px;}
+        .contact p {margin-bottom:15px; font-size:1.1rem;}
+        .contact a {color:#e67e22; transition:0.3s;}
+        .contact a:hover {color:#ff9933;}
+        .social a {margin:0 10px; font-size:1.5rem; color:#fff; transition:0.3s;}
+        .social a:hover {color:#e67e22;}
+
+        footer {background:#111; color:#fff; text-align:center; padding:20px;}
+        
+        @media(max-width:768px){
+            .hero {flex-direction:column; text-align:center;}
+            .hero .text {padding-right:0; margin-bottom:30px;}
+            .service-cards, .project-cards {flex-direction:column; align-items:center;}
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Habibur Rahaman</div>
+        <nav>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="text">
+            <h1>Hi, I'm Habibur</h1>
+            <p>Professional Web Developer specializing in modern, responsive, and user-friendly web applications. I create digital solutions that make your business shine online.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+        <div class="image">
+            <img src="images/ami.JPG" alt="Habibur Rahaman Portrait">
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>My Skills</h2>
+        <div class="service-cards">
+            <div class="card">
+                <i class="fa fa-code"></i>
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, React, Node.js, and responsive design for modern websites and apps.</p>
+            </div>
+            <div class="card">
+                <i class="fa fa-database"></i>
+                <h3>Backend & Databases</h3>
+                <p>Node.js, Express, MongoDB, SQL, and API development for seamless backend solutions.</p>
+            </div>
+            <div class="card">
+                <i class="fa fa-mobile"></i>
+                <h3>UI/UX Design</h3>
+                <p>User-centric design with Figma & Adobe XD for clean and engaging web interfaces.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="images/prot.png" alt="Project 1">
+                <div class="info">
+                    <h3>Portfolio Website</h3>
+                    <p>A modern personal portfolio built with HTML, CSS, and JavaScript showcasing projects and skills.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/e.png" alt="Project 2">
+                <div class="info">
+                    <h3>E-commerce Platform</h3>
+                    <p>Full-stack e-commerce application with React frontend and Node.js backend, including payment integration.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/blg.png" alt="Project 3">
+                <div class="info">
+                    <h3>Blog Website</h3>
+                    <p>Dynamic blogging platform using MongoDB, Express, React, Node.js with user authentication and CRUD features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:hr5757716@gmail.com">hr5757716@gmail.com</a></p>
+        <p>Phone: <a href="tel:+01577172622">+01577172622</a></p>
+        <p>Follow me on social media:</p>
+        <div class="social">
+            <a href="https://www.facebook.com/md.habibur.rahman.273392" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/habibur-rahman-834265312/" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/habib_14_f/" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Habibur Rahaman. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
